@@ -181,7 +181,7 @@
         return (event) => {
             event.stopPropagation();
 
-            var target = event.target;
+            let target = event.target;
 
             while (target.parent != settings.innerGroup && target.parent != settings.viewGroup && target.parent) {
                 target = target.parent;
